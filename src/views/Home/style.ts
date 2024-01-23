@@ -62,7 +62,7 @@ export const ElectionService = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media (max-width: 425px) {
+  @media (min-width: 425x) {
     padding: 0.5rem 2rem 8rem;
   }
 `;
@@ -77,9 +77,7 @@ export const MainImgElectionService = styled.img`
   animation-delay: 0.6s;
   width: 100%;
   max-width: 660px;
-  @media (max-width: 425px) {
-    margin-top: -150px;
-  }
+  animation: ${fadeIn} 1s ease-out 0.6s both;
 `;
 
 export const FormHome = styled.section`
