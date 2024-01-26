@@ -3,27 +3,16 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import CochePrueba from "../../assets/img/CochePrueba.png";
 import {
-  TarifaImg,
-  TarifaLi,
-  TarifasUl,
   InputForm,
   DivSection,
   SubmitForm,
   FormMain,
   DivFormMain,
   RequireForm,
+  RequireFormSend,
 } from "./style";
 
 const FormPhone = () => {
-  const [activeImage, setActiveImage] = useState(""); // Variable de estado para la imagen activa
-
-  // Función para manejar el clic en los botones con imágenes
-  const handleImageClick = (imageUrl: string) => {
-    setActiveImage(imageUrl);
-    // Actualizar el campo de formulario con el valor de la imagen
-    formik.setFieldValue("imagenSeleccionada", imageUrl);
-  };
-
   // Define el esquema de validación con Yup
   const validationSchema = Yup.object({
     nombre: Yup.string().required("Este campo es requerido"),
@@ -52,7 +41,6 @@ const FormPhone = () => {
   // Efecto secundario para establecer el primer botón activo al iniciar
   useEffect(() => {
     const primeraImagen = "imagen1.jpg";
-    setActiveImage(primeraImagen);
     formik.setFieldValue("imagenSeleccionada", primeraImagen);
   }, [formik.setFieldValue]);
 
@@ -60,36 +48,7 @@ const FormPhone = () => {
     <FormMain onSubmit={formik.handleSubmit}>
       {/* Campos de texto */}
       {/* Botones con imágenes */}
-      <TarifasUl>
-        <TarifaLi
-          onClick={() => handleImageClick("imagen1.jpg")}
-          className={activeImage === "imagen1.jpg" ? "active" : ""}
-        >
-          <TarifaImg src={CochePrueba} alt="Imagen 1" />
-          Personal
-        </TarifaLi>
-        <TarifaLi
-          onClick={() => handleImageClick("imagen2.jpg")}
-          className={activeImage === "imagen2.jpg" ? "active" : ""}
-        >
-          <TarifaImg src={CochePrueba} alt="Imagen 2" />
-          Business
-        </TarifaLi>
-        <TarifaLi
-          onClick={() => handleImageClick("imagen3.jpg")}
-          className={activeImage === "imagen3.jpg" ? "active" : ""}
-        >
-          <TarifaImg src={CochePrueba} alt="Imagen 3" />
-          Premium
-        </TarifaLi>
-        <TarifaLi
-          onClick={() => handleImageClick("imagen4.jpg")}
-          className={activeImage === "imagen4.jpg" ? "active" : ""}
-        >
-          <TarifaImg src={CochePrueba} alt="Imagen 4" />
-          VIP
-        </TarifaLi>
-      </TarifasUl>
+
       <DivSection>
         <DivFormMain>
           <InputForm
@@ -152,11 +111,11 @@ const FormPhone = () => {
       <DivSection>
         <SubmitForm type="submit">Enviar</SubmitForm>
       </DivSection>
-      {formik.errors.lugarDestino ||
-      formik.errors.nombre ||
-      formik.errors.lugarOrigen ||
-      formik.errors.telefono ? (
-        <RequireForm>Por favor, completa todos los campos.</RequireForm>
+      {(formik.touched.lugarDestino && formik.errors.lugarDestino) ||
+      (formik.touched.nombre && formik.errors.nombre) ||
+      (formik.touched.lugarOrigen && formik.errors.lugarOrigen) ||
+      (formik.touched.telefono && formik.errors.telefono) ? (
+        <RequireFormSend>Por favor, completa todos los campos.</RequireFormSend>
       ) : null}
     </FormMain>
   );

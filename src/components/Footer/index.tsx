@@ -1,12 +1,30 @@
 import { Link } from "react-router-dom";
 import {
-  FooterCodeToFit,
-  FooterDescription,
-  FooterDetail,
+  FooterTaxi,
+  FooterCopyRightDetailDescription,
+  FooterCopyRightDetail,
   LinkBar,
   LinkLi,
+  FooterTaxiContainer,
+  FooterTaxiContainerLeft,
+  FooterTaxiContainerRight,
+  FooterTaxiContainerLeftFrist,
+  FooterTaxiContainerLeftSecond,
+  FooterTaxiContainerLeftThird,
+  FooterTaxiImg,
+  FooterTaxiP,
+  FooterTaxiIconA,
+  FooterTaxiContainerLeftLi,
+  FooterTaxiContainerRightTitle,
+  FooterTaxiContainerRightLi,
 } from "./style";
 
+import Logo from "../../assets/img/logo-taxin1.png";
+import Phone from "../../assets/svg/Phone";
+import Email from "../../assets/svg/email";
+import WorldTaxi from "../../assets/svg/WorldTaxi";
+import Facebook from "../../assets/svg/Facebook";
+import Instagram from "../../assets/svg/Instagram";
 const links = [
   { text: "Inicio", url: "/" },
   { text: "Servicios", url: "/service" },
@@ -23,13 +41,85 @@ const footerDescriptions = [
 
 function Footer() {
   return (
-    <FooterCodeToFit>
-      <FooterDetail>
+    <FooterTaxi>
+      <FooterTaxiContainer>
+        <FooterTaxiContainerLeft>
+          <FooterTaxiContainerLeftFrist>
+            <FooterTaxiImg src={Logo} alt="" />
+          </FooterTaxiContainerLeftFrist>{" "}
+          <FooterTaxiContainerLeftSecond>
+            <FooterTaxiP>
+              <FooterTaxiIconA />
+              <WorldTaxi />
+              Bilbao. Pais Vasco
+            </FooterTaxiP>{" "}
+            <FooterTaxiP>
+              <FooterTaxiIconA />
+              <Phone />
+              +34 633 556 379
+            </FooterTaxiP>
+            <FooterTaxiP>
+              <FooterTaxiIconA />
+              <Email />
+              email@email.com
+            </FooterTaxiP>
+          </FooterTaxiContainerLeftSecond>
+          <FooterTaxiContainerLeftThird>
+            <FooterTaxiContainerLeftLi>
+              <Facebook />
+            </FooterTaxiContainerLeftLi>
+            <FooterTaxiContainerLeftLi>
+              <Instagram />
+            </FooterTaxiContainerLeftLi>
+          </FooterTaxiContainerLeftThird>
+        </FooterTaxiContainerLeft>
+        <FooterTaxiContainerRight>
+          <FooterTaxiContainerRightTitle>
+            Servicios
+            <FooterTaxiContainerRightLi>
+              Traslado Interurbano
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi>
+              Traslado Del Aeropuerto
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi>
+              Traslado Hospitalario
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi>
+              Traslado De Equipaje
+            </FooterTaxiContainerRightLi>
+          </FooterTaxiContainerRightTitle>
+          <FooterTaxiContainerRightTitle>
+            Tarifas Especiales
+            <FooterTaxiContainerRightLi>
+              Transporte Privado
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi>Aeropuerto</FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi>
+              Servicio Empresa
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi>Colectivo </FooterTaxiContainerRightLi>
+          </FooterTaxiContainerRightTitle>
+          <FooterTaxiContainerRightTitle>
+            Seccion
+            <FooterTaxiContainerRightLi>Home </FooterTaxiContainerRightLi>{" "}
+            <FooterTaxiContainerRightLi>Get Taxi </FooterTaxiContainerRightLi>{" "}
+            <FooterTaxiContainerRightLi>
+              Sobre Nosotros{" "}
+            </FooterTaxiContainerRightLi>{" "}
+            <FooterTaxiContainerRightLi>Tarifas </FooterTaxiContainerRightLi>{" "}
+            <FooterTaxiContainerRightLi>Contacto </FooterTaxiContainerRightLi>{" "}
+          </FooterTaxiContainerRightTitle>
+        </FooterTaxiContainerRight>
+      </FooterTaxiContainer>
+      <FooterCopyRightDetail>
         {footerDescriptions.map((description, index) => (
-          <FooterDescription key={index}>{description}</FooterDescription>
+          <FooterCopyRightDetailDescription key={index}>
+            {description}
+          </FooterCopyRightDetailDescription>
         ))}
-      </FooterDetail>
-    </FooterCodeToFit>
+      </FooterCopyRightDetail>
+    </FooterTaxi>
   );
 }
 

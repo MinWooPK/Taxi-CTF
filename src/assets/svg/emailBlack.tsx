@@ -1,7 +1,6 @@
 const Email = () => {
   return (
     <svg
-      fill="#ffc61a"
       width={40}
       height={40}
       viewBox="0 0 1920 1920"

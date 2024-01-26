@@ -19,11 +19,12 @@ const rotateAnimation = keyframes`
   }
 `;
 export const InfoTop = styled.section`
-  padding: 3rem 0 13rem;
+  padding: 3rem 0 5rem;
   background-color: #000;
 `;
 
 export const InfoMainTop = styled.div`
+  width: 100%;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;

@@ -3,11 +3,10 @@ import styled, { keyframes } from "styled-components";
 export const Navbar = styled.section`
   display: flex;
   flex-wrap: wrap;
+  padding: 10px 40px;
   align-items: center;
   justify-content: space-between;
   /* padding: 0.5rem 1rem; */
-  height: 114px;
-  top: -20px;
   left: 0;
   z-index: 5;
   position: fixed;
@@ -27,7 +26,6 @@ export const ContainerNavbar = styled.div`
   }
 `;
 export const LogoContainer = styled.div`
-  margin: auto;
   /* padding: 22px 0; */
 `;
 export const LogoImg = styled.img`
@@ -43,7 +41,6 @@ export const Logo = styled.a`
 `;
 
 export const SiteMenu = styled.div`
-  margin: 0 auto;
   text-align: center;
   @media (max-width: 768px) {
     display: none;

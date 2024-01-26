@@ -21,14 +21,17 @@ const OurServices = () => {
   return (
     <InfoTop>
       <InfoMainTop>
-        <InfoMainTopH2>Our Express Transportation Services</InfoMainTopH2>
+        <InfoMainTopH2>Nuestros Servicios De Transporte Urgente</InfoMainTopH2>
         <InfoMainTopP>
-          We are at your service immediately for your urgent transfer needs.
+          Estamos a su servicio inmediatamente para sus necesidades urgentes de
+          traslado.{" "}
         </InfoMainTopP>
       </InfoMainTop>
       <InfoMainDown>
         <InfoMainDownContainer>
-          <InfoMainDownContainerH3>Intercity Transfer</InfoMainDownContainerH3>
+          <InfoMainDownContainerH3>
+            Traslado interurbano
+          </InfoMainDownContainerH3>
           <InfoMainDownContainerIconBox>
             <InfoMainDownContainerOrbit />
             <InfoMainDownContainerCircle>
@@ -36,12 +39,13 @@ const OurServices = () => {
             </InfoMainDownContainerCircle>
           </InfoMainDownContainerIconBox>
           <InfoMainDownContainerP>
-            We enseure that you travel quickly and reliably for your intercity
-            transfer.
+            Nos aseguramos de que su traslado interurbano sea rápido y fiable.
           </InfoMainDownContainerP>
         </InfoMainDownContainer>
         <InfoMainDownContainer>
-          <InfoMainDownContainerH3>Airport Transfer</InfoMainDownContainerH3>
+          <InfoMainDownContainerH3>
+            Traslado Del Aeropuerto
+          </InfoMainDownContainerH3>
           <InfoMainDownContainerIconBox>
             <InfoMainDownContainerOrbit />
             <InfoMainDownContainerCircle>
@@ -49,12 +53,13 @@ const OurServices = () => {
             </InfoMainDownContainerCircle>
           </InfoMainDownContainerIconBox>
           <InfoMainDownContainerP>
-            We provide fast and reliable travel for your emergency airport
-            journeys.
+            Proporcionamos viajes rápidos y fiables para sus desplazamientos
           </InfoMainDownContainerP>
         </InfoMainDownContainer>
         <InfoMainDownContainer>
-          <InfoMainDownContainerH3>Hospital Transfer</InfoMainDownContainerH3>
+          <InfoMainDownContainerH3>
+            Traslado Hospitalario
+          </InfoMainDownContainerH3>
           <InfoMainDownContainerIconBox>
             <InfoMainDownContainerOrbit />
             <InfoMainDownContainerCircle>
@@ -62,12 +67,13 @@ const OurServices = () => {
             </InfoMainDownContainerCircle>
           </InfoMainDownContainerIconBox>
           <InfoMainDownContainerP>
-            Our drivers will deliver you quickly for your hospital needs.
+            Nuestros conductores le entregarán rápidamente para sus necesidades
+            hospitalarias.
           </InfoMainDownContainerP>
         </InfoMainDownContainer>
         <InfoMainDownContainer>
           <InfoMainDownContainerH3>
-            Baggage Transportation
+            Transporte De Equipajes
           </InfoMainDownContainerH3>
           <InfoMainDownContainerIconBox>
             <InfoMainDownContainerOrbit />
@@ -76,8 +82,7 @@ const OurServices = () => {
             </InfoMainDownContainerCircle>
           </InfoMainDownContainerIconBox>
           <InfoMainDownContainerP>
-            We take the load off your back. Take advantage of our luggage
-            service.
+            Le quitamos el peso de encima. Aproveche nuestro servicio equipaje.
           </InfoMainDownContainerP>
         </InfoMainDownContainer>
       </InfoMainDown>

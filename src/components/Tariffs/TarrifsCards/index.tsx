@@ -4,26 +4,44 @@ import {
   TariffsCardBottom,
   TariffsCardBottomPrice,
   TariffsCardH3,
+  TariffsCardImg,
   TariffsCardTop,
   TariffsCardTopP,
 } from "./styled";
 
-const TariffsCards = () => {
+import Company from "../../../assets/svg/Company";
+import Airport from "../../../assets/svg/Airport";
+import Group from "../../../assets/svg/Group";
+import Individual from "../../../assets/svg/Individual";
+import { ReactNode } from "react";
+interface TariffsCardsProps {
+  title: string;
+  description: string;
+  miniTitle: string;
+  // price: string;
+  icon: ReactNode;
+}
+
+const TariffsCards = ({
+  title,
+  description,
+  miniTitle,
+  // price,
+  icon,
+}: TariffsCardsProps) => {
   return (
     <TariffsCard>
       <TariffsCardTop>
-        <TariffsCardH3>Colectivo</TariffsCardH3>
-        <TariffsCardTopP>
-          En Este Metodo sera el tranporte colectivo
-        </TariffsCardTopP>
+        <TariffsCardImg>{icon}</TariffsCardImg>
+        <TariffsCardH3>{title}</TariffsCardH3>
+        <TariffsCardTopP>{description}</TariffsCardTopP>
       </TariffsCardTop>
       <TariffsCardBottom>
-        <TariffsCardH3>Colectivo</TariffsCardH3>
-        <TariffsCardBottomPrice>13€ /Km</TariffsCardBottomPrice>
+        <TariffsCardH3>{miniTitle}</TariffsCardH3>
+        {/* <TariffsCardBottomPrice>{price}</TariffsCardBottomPrice> */}
         <ButtonGet>Get Taxi</ButtonGet>
       </TariffsCardBottom>
     </TariffsCard>
   );
 };
-
 export default TariffsCards;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const TariffsCard = styled.div`
+  max-width: 300px;
   cursor: pointer;
   height: auto;
   border-radius: 0.3rem;
@@ -13,14 +14,18 @@ export const TariffsCard = styled.div`
     transform: perspective(300px) rotateX(-2.65deg) rotateY(-0.37deg)
       scale3d(1, 1, 1);
   }
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
 `;
 export const TariffsCardTop = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   height: auto;
   box-shadow: none;
-  padding: 3rem 2rem 6.5rem;
+  padding: 2rem 1rem 7.5rem;
   background-image: linear-gradient(to right bottom, #000000, #000000);
   transition: all 0.8s ease;
   width: 100%;
@@ -37,6 +42,7 @@ export const TariffsCardH3 = styled.h3`
 export const TariffsCardTopP = styled.p`
   font-size: 16px;
   font-weight: 400;
+  max-height: 72px;
   color: #ffffff;
   text-align: center;
 `;
@@ -49,6 +55,7 @@ export const TariffsCardBottom = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  min-height: 296px;
 `;
 export const TariffsCardBottomPrice = styled.p`
   font-size: 30px;
@@ -67,4 +74,11 @@ export const ButtonGet = styled.button`
   height: 70px;
   line-height: 70px;
   display: inline-block;
+`;
+
+export const TariffsCardImg = styled.div`
+  background-color: white;
+  border-radius: 23rem;
+  width: fit-content;
+  padding: 2rem;
 `;

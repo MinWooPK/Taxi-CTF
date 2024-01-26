@@ -30,7 +30,7 @@ import Map from "../../assets/svg/map";
 const NavHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [navVisible, setNavVisible] = useState(true);
-  const [isDesktop, setIsDestkop] = useState(false);
+  const [isDesktop, setIsDestkop] = useState(window.innerWidth > 768);
 
   useEffect(() => {
     const handleResize = () => {
@@ -57,22 +57,22 @@ const NavHeader = () => {
         </LogoContainer>
         <SiteMenu>
           <StieMenuLi>
-            <StieMenuHref>Home</StieMenuHref>
+            <StieMenuHref href="/">Home</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref>Get Taxi</StieMenuHref>
+            <StieMenuHref href="/GetTaxi">Get Taxi</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref>About Us</StieMenuHref>
+            <StieMenuHref href="/About Us">About Us</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref>Services</StieMenuHref>
+            <StieMenuHref href="/Services">Services</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref>Tarifas</StieMenuHref>
+            <StieMenuHref href="/Tariffs">Tarifas</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref>Contacto</StieMenuHref>
+            <StieMenuHref href="/Contact">Contacto</StieMenuHref>
           </StieMenuLi>
         </SiteMenu>
         <HamburgerMenu
@@ -130,10 +130,6 @@ const NavHeader = () => {
             </CopyRightDescription>
           </NavRed>
         </NavBlack>
-        <NavbarButton>
-          <Phone />
-          +34 603 18 44 31
-        </NavbarButton>
       </ContainerNavbar>
     </Navbar>
   );

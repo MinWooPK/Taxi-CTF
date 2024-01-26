@@ -1,38 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-export const TarifasUl = styled.ul`
-  margin: 20px 0;
-  padding: 0px;
-  list-style: none;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-export const TarifaLi = styled.li`
-  background: none;
-  align-items: center;
-  color: #5a5a5a;
-  display: flex;
-  flex-direction: column;
-  padding: 6px 13px;
-  cursor: pointer;
-  font-weight: 600;
-  border-bottom: 4px solid #ffffff;
-  min-width: 270px;
-  &.active {
-    border-bottom-color: black; // Cambia el color del borde a azul cuando la clase active está presente
-  }
-`;
-
-export const TarifaImg = styled.img`
-  width: 146px;
-  position: relative;
-  top: 25px;
-`;
-
 export const InputForm = styled.input`
   height: 70px;
   padding: 0 30px;
@@ -79,6 +46,13 @@ export const FormMain = styled.form`
   flex-direction: column;
   gap: 1rem;
   width: 100%;
+  padding: 2rem 9rem 5rem;
+  @media (max-width: 768px) {
+    padding: 2rem 5rem 5rem;
+  }
+  @media (max-width: 425px) {
+    padding: 2rem 2rem 5rem;
+  }
 `;
 
 export const DivFormMain = styled.div`
@@ -91,4 +65,14 @@ export const RequireForm = styled.div`
   font-weight: normal;
   text-align: center;
   margin-top: 5px;
+`;
+
+export const RequireFormSend = styled.div`
+  color: #dc3232;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 5px;
+  border-top: 1px solid #dc3232;
+  border-bottom: 1px solid #dc3232;
 `;

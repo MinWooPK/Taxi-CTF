@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import NavHeader from "./components/NavHeader";
 import Home from "./views/Home";
 import { defaultTheme } from "./config/theme";
+import Services from "./views/Services";
 
 export default function App() {
   return (
@@ -11,8 +12,12 @@ export default function App() {
       <NavHeader />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+          <Route element={<Layout />}>
+            <Route path="/" index element={<Home />} />
+            <Route path="portfolio" element={<Home />} />{" "}
+            <Route path="Servicios" element={<Services />} />{" "}
+            <Route path="portfolio" element={<Home />} />
+            <Route path="portfolio" element={<Home />} />
           </Route>
         </Routes>
       </BrowserRouter>

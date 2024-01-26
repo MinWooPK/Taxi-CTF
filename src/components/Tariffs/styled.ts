@@ -5,8 +5,11 @@ export const TariffsSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 4rem 7rem;
   gap: 1rem;
+  @media (max-width: 625px) {
+    padding: 4rem 1rem;
+  }
 `;
 export const TariffsTitle = styled.div`
   max-height: 160px;
