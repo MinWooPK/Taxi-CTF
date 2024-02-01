@@ -30,7 +30,7 @@ const Information = () => {
         <InformationContainerDefinition>
           <TitleContainer>
             <InformationContainerDefinitionH2>
-              ¿ Necesitas transporte ?
+              ¿Necesitas transporte?
             </InformationContainerDefinitionH2>
             <InformationContainerDefinitionP>
               Siempre estamos listos para sus viajes urgentes con nuestros años
