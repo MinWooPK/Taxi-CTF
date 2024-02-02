@@ -1,5 +1,16 @@
-const Services = () => {
-  return <div>hello</div>;
+import Information from "../../components/Information";
+import OurServices from "../../components/OurServices";
+import Tariffs from "../../components/Tariffs";
+import { FirstContainer } from "./style";
+
+const ServicesPage = () => {
+  return (
+    <>
+      <FirstContainer></FirstContainer>
+      <OurServices />
+      <Tariffs />
+    </>
+  );
 };
 
-export default Services;
+export default ServicesPage;

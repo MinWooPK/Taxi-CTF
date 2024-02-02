@@ -63,10 +63,10 @@ const NavHeader = () => {
             <StieMenuHref href="/GetTaxi">Get Taxi</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref href="/About Us">About Us</StieMenuHref>
+            <StieMenuHref href="/AboutUs">About Us</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref href="/Services">Services</StieMenuHref>
+            <StieMenuHref href="/Servicios">Services</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
             <StieMenuHref href="/Tariffs">Tarifas</StieMenuHref>

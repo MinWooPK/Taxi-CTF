@@ -21,6 +21,9 @@ const rotateAnimation = keyframes`
 export const InfoTop = styled.section`
   padding: 3rem 0 5rem;
   background-color: #000;
+  @media (max-width: 425px) {
+    padding: 3rem 1rem 5rem;
+  }
 `;
 
 export const InfoMainTop = styled.div`

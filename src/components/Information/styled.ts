@@ -13,6 +13,9 @@ export const InformationSection = styled.section`
   @media (max-width: 1103px) {
     padding: 7rem 2rem 5rem;
   }
+  @media (max-width: 1103px) {
+    padding: 7rem 1rem 5rem;
+  }
 `;
 
 export const InformationContainer = styled.div`
@@ -66,6 +69,9 @@ export const InformationContainerDefinitionH2 = styled.h2`
   color: #212529;
   font-size: 30px;
   font-weight: 700;
+  @media (max-width: 425px) {
+    font-size: 24px;
+  }
 `;
 
 export const InformationContainerDefinitionP = styled.p`

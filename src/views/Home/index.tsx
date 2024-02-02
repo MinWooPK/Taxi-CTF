@@ -1,10 +1,10 @@
 import {
   SliderTaxi,
   SliderTaxiP,
-  ElectionService,
-  MainImgElectionService,
-  FormHome,
-  MainImgDiv,
+  // ElectionService,
+  // MainImgElectionService,
+  // FormHome,
+  // MainImgDiv,
   StyledSliderTaxiH2,
   SliderTaxiTitle,
   ButtonWhatssap,
@@ -24,6 +24,7 @@ import WhatsAppIcon from "../../assets/svg/Whatsapp";
 
 import { useEffect, useState } from "react";
 import Information from "../../components/Information";
+import ElectionService from "../../components/ElectionService";
 
 const Home = () => {
   const [showText, setShowText] = useState(0);
@@ -79,14 +80,15 @@ const Home = () => {
           </ButtonEmail>
         </ButtonContainer>
       </SliderTaxi>
-      <ElectionService>
+      {/* <ElectionService>
         <MainImgDiv>
           <MainImgElectionService src={MercedezMain} />
         </MainImgDiv>
         <FormHome>
           <FormPhone></FormPhone>
         </FormHome>
-      </ElectionService>
+      </ElectionService> */}
+      <ElectionService />
       <Information />
       <OurServices />
       <Tariffs />
