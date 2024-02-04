@@ -26,6 +26,7 @@ import { useEffect, useState } from "react";
 import Call from "../../assets/svg/call";
 import Email from "../../assets/svg/email";
 import Map from "../../assets/svg/map";
+import EmailBlack from "../../assets/svg/emailBlack";
 
 const NavHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -96,7 +97,7 @@ const NavHeader = () => {
                 </IconCircle>
                 <IconDescription>+34 603 18 44 31</IconDescription>
                 <IconCircle>
-                  <Email />
+                  <EmailBlack />
                 </IconCircle>
                 <IconDescription>taxi@example.com</IconDescription>
                 <IconCircle>

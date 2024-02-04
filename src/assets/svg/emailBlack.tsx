@@ -1,4 +1,4 @@
-const Email = () => {
+const EmailBlack = () => {
   return (
     <svg
       width={40}
@@ -13,4 +13,4 @@ const Email = () => {
     </svg>
   );
 };
-export default Email;
+export default EmailBlack;
