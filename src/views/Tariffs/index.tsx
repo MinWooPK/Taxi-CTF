@@ -1,4 +1,5 @@
 import Tariffs from "../../components/Tariffs";
+import TitleContainer from "../../components/TitleContainer";
 import { FirstContainer } from "./style";
 
 const TariffsPage = () => {
@@ -27,7 +28,8 @@ const TariffsPage = () => {
             <EmailIcon></EmailIcon>
             Email
           </ButtonEmail>
-        </ButtonContainer> */}
+        </ButtonContainer> */}{" "}
+        <TitleContainer subTitleText={"Tarifas"} titleText={"Tarifas"} />
       </FirstContainer>
       {/* <ElectionService>
         <MainImgDiv>

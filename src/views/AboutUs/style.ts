@@ -17,3 +17,11 @@ export const FirstContainer = styled.section`
     min-height: 680px;
   }
 `;
+export const CardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 2rem;
+  padding: 26px 15px 25px 15px;
+`;
