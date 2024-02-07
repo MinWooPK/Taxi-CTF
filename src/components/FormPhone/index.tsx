@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import CochePrueba from "../../assets/img/CochePrueba.png";
 import {
   InputForm,
   DivSection,
@@ -10,45 +9,55 @@ import {
   DivFormMain,
   RequireForm,
   RequireFormSend,
+  RequireFormSendTrue,
 } from "./style";
 
 const FormPhone = () => {
-  // Define el esquema de validación con Yup
   const validationSchema = Yup.object({
     nombre: Yup.string().required("Este campo es requerido"),
     lugarOrigen: Yup.string().required("Este campo es requerido"),
     lugarDestino: Yup.string().required("Este campo es requerido"),
     telefono: Yup.string().required("Este campo es requerido"),
-    imagenSeleccionada: Yup.string().required("Selecciona una imagen"),
   });
 
-  // Inicializa Formik
+  const [mensajeEnviado, setMensajeEnviado] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       nombre: "",
       lugarOrigen: "",
       lugarDestino: "",
       telefono: "",
-      imagenSeleccionada: "", // Nuevo campo para almacenar la imagen seleccionada
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      // Aquí puedes manejar la lógica de envío del formulario
-      console.log("Formulario enviado:", values);
+      // Envía el formulario por Formspree
+      fetch("https://formspree.io/f/meqyanoy", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      })
+        .then((response) => {
+          if (response.ok) {
+            console.log("Formulario enviado correctamente");
+            setMensajeEnviado(true); // Actualiza el estado para mostrar el mensaje de envío correcto
+          } else {
+            console.error(
+              "Error al enviar el formulario:",
+              response.statusText
+            );
+          }
+        })
+        .catch((error) => {
+          console.error("Error al enviar el formulario:", error);
+        });
     },
   });
 
-  // Efecto secundario para establecer el primer botón activo al iniciar
-  useEffect(() => {
-    const primeraImagen = "imagen1.jpg";
-    formik.setFieldValue("imagenSeleccionada", primeraImagen);
-  }, [formik.setFieldValue]);
-
   return (
     <FormMain onSubmit={formik.handleSubmit}>
-      {/* Campos de texto */}
-      {/* Botones con imágenes */}
-
       <DivSection>
         <DivFormMain>
           <InputForm
@@ -111,10 +120,12 @@ const FormPhone = () => {
       <DivSection>
         <SubmitForm type="submit">Enviar</SubmitForm>
       </DivSection>
-      {(formik.touched.lugarDestino && formik.errors.lugarDestino) ||
-      (formik.touched.nombre && formik.errors.nombre) ||
-      (formik.touched.lugarOrigen && formik.errors.lugarOrigen) ||
-      (formik.touched.telefono && formik.errors.telefono) ? (
+      {mensajeEnviado ? (
+        <RequireFormSendTrue>Se ha enviado el mensaje</RequireFormSendTrue>
+      ) : (formik.touched.lugarDestino && formik.errors.lugarDestino) ||
+        (formik.touched.nombre && formik.errors.nombre) ||
+        (formik.touched.lugarOrigen && formik.errors.lugarOrigen) ||
+        (formik.touched.telefono && formik.errors.telefono) ? (
         <RequireFormSend>Por favor, completa todos los campos.</RequireFormSend>
       ) : null}
     </FormMain>

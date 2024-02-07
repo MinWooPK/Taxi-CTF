@@ -15,6 +15,9 @@ export const Navbar = styled.section`
   @media (max-width: 768px) {
     flex-flow: row nowrap;
   }
+  @media (max-width: 430px) {
+    padding: 10px 24px;
+  }
 `;
 export const ContainerNavbar = styled.div`
   display: flex;
@@ -71,6 +74,7 @@ export const StieMenuHref = styled.a`
   color: #fff;
   font-size: 18px;
   letter-spacing: 0;
+  cursor: pointer;
   position: relative;
   text-decoration: none; /* Para quitar el subrayado predeterminado */
   overflow: hidden;

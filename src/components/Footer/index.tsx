@@ -102,13 +102,24 @@ function Footer() {
           </FooterTaxiContainerRightTitle>
           <FooterTaxiContainerRightTitle>
             Seccion
-            <FooterTaxiContainerRightLi>Home </FooterTaxiContainerRightLi>{" "}
-            <FooterTaxiContainerRightLi>Get Taxi </FooterTaxiContainerRightLi>{" "}
-            <FooterTaxiContainerRightLi>
-              Sobre Nosotros{" "}
-            </FooterTaxiContainerRightLi>{" "}
-            <FooterTaxiContainerRightLi>Tarifas </FooterTaxiContainerRightLi>{" "}
-            <FooterTaxiContainerRightLi>Contacto </FooterTaxiContainerRightLi>{" "}
+            <FooterTaxiContainerRightLi href="/">
+              Home
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi href="/GetTaxi">
+              Get Taxi
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi href="/AboutUs">
+              Sobre Nosotros
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi href="/Servicios">
+              Services
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi href="/Tariffs">
+              Tarifas
+            </FooterTaxiContainerRightLi>
+            <FooterTaxiContainerRightLi href="/Contact">
+              Contacto
+            </FooterTaxiContainerRightLi>
           </FooterTaxiContainerRightTitle>
         </FooterTaxiContainerRight>
       </FooterTaxiContainer>

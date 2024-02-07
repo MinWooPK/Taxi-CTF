@@ -1,10 +1,10 @@
+import React, { useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import Call from "../../assets/svg/call";
 import EmailBlack from "../../assets/svg/emailBlack";
 import CardInfo from "../../components/CardInfo";
 import Map from "../../assets/svg/map";
-import * as Yup from "yup";
-import emailjs from "emailjs-com";
-
 import TitleContainer from "../../components/TitleContainer";
 import {
   CardContainer,
@@ -18,56 +18,50 @@ import {
   MainTitle,
   RequireForm,
   RequireFormSend,
+  RequireFormSendTrue,
   SubTitle,
   SubmitForm,
   TitleSection,
 } from "./style";
-import { useFormik } from "formik";
 
 const ContactPage = () => {
-  // Define el esquema de validación con Yup
   const validationSchema = Yup.object({
     nombre: Yup.string().required("Este campo es requerido"),
-    lugarOrigen: Yup.string().required("Este campo es requerido"),
-    lugarDestino: Yup.string().required("Este campo es requerido"),
+    email: Yup.string()
+      .email("Dirección de correo inválida")
+      .required("Este campo es requerido"),
     telefono: Yup.string().required("Este campo es requerido"),
-    imagenSeleccionada: Yup.string().required("Selecciona una imagen"),
+    texto: Yup.string().required("Este campo es requerido"),
   });
-  const serviceId = "service_f5t3gel";
-  const templateId = "template_2ny3bhg";
-  const publicKey = "TAoGHEumcEUc906RB";
 
-  // Inicializa Formik
+  const [mensajeEnviado, setMensajeEnviado] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       nombre: "",
       email: "",
       telefono: "",
-      texto: "", // Nuevo campo para almacenar la imagen seleccionada
+      texto: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      // Aquí puedes manejar la lógica de envío del formulario
-      console.log("Formulario enviado:", values);
-
-      emailjs.init(serviceId);
-
-      // Envía el correo electrónico
-      const templateParams = {
-        to_name: "Destinatario",
-        from_name: "Remitente",
-        message: `Nombre: ${values.nombre}\nEmail: ${values.email}\nTeléfono: ${values.telefono}\nMensaje: ${values.texto}`,
-      };
-
-      // Envía el correo usando la plantilla de EmailJS
-      emailjs
-        .send(publicKey, templateId, templateParams)
-        .then((response) => {
-          console.log("Correo electrónico enviado correctamente:", response);
-        })
-        .catch((error) => {
-          console.error("Error al enviar el correo electrónico:", error);
+    onSubmit: async (values) => {
+      try {
+        const response = await fetch("https://formspree.io/f/meqyanoy", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
         });
+        if (response.ok) {
+          console.log("Formulario enviado correctamente");
+          setMensajeEnviado(true); // Actualiza el estado para mostrar el mensaje de envío correcto
+        } else {
+          console.error("Error al enviar el formulario:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error al enviar el formulario:", error);
+      }
     },
   });
 
@@ -79,13 +73,13 @@ const ContactPage = () => {
       <ContactContainer>
         <CardContainer>
           <CardInfo
-            subTitleCard={"juancarlos.blazquezv@gmail.com"}
+            subTitleCard={"tu_correo@example.com"}
             titleCard={"Email"}
             imgCard={<EmailBlack />}
           />
 
           <CardInfo
-            subTitleCard={"País Vasco"}
+            subTitleCard={"Tu dirección"}
             titleCard={"Dirección"}
             imgCard={<Map />}
           />
@@ -95,9 +89,6 @@ const ContactPage = () => {
             imgCard={<Call />}
           />
           <FormMain onSubmit={formik.handleSubmit}>
-            {/* Campos de texto */}
-            {/* Botones con imágenes */}
-
             <DivSection>
               <DivFormMain>
                 <InputForm
@@ -157,9 +148,13 @@ const ContactPage = () => {
             <DivSection>
               <SubmitForm type="submit">Enviar</SubmitForm>
             </DivSection>
-            {(formik.touched.email && formik.errors.email) ||
-            (formik.touched.nombre && formik.errors.nombre) ||
-            (formik.touched.telefono && formik.errors.telefono) ? (
+            {mensajeEnviado ? (
+              <RequireFormSendTrue>
+                Se ha enviado el mensaje
+              </RequireFormSendTrue>
+            ) : (formik.touched.email && formik.errors.email) ||
+              (formik.touched.nombre && formik.errors.nombre) ||
+              (formik.touched.telefono && formik.errors.telefono) ? (
               <RequireFormSend>
                 Por favor, completa todos los campos.
               </RequireFormSend>

@@ -39,7 +39,7 @@ const TariffsCards = ({
       <TariffsCardBottom>
         <TariffsCardH3>{miniTitle}</TariffsCardH3>
         {/* <TariffsCardBottomPrice>{price}</TariffsCardBottomPrice> */}
-        <ButtonGet>Get Taxi</ButtonGet>
+        <ButtonGet href="/Contact">Get Taxi</ButtonGet>
       </TariffsCardBottom>
     </TariffsCard>
   );

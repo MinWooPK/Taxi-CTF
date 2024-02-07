@@ -31,14 +31,19 @@ export const SubmitForm = styled.button`
   background: #fff;
   border-bottom: 0.3rem solid #ffc61a !important;
   border-radius: 23rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: none;
   color: #1a1a1a;
   width: 100%;
   display: block;
   transition: all 0.3s;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  font-size: 700;
   cursor: pointer;
+  &:hover {
+    background-color: #737373;
+    color: #ffc61a;
+  }
 `;
 
 export const FormMain = styled.form`
@@ -75,4 +80,13 @@ export const RequireFormSend = styled.div`
   margin-top: 5px;
   border-top: 1px solid #dc3232;
   border-bottom: 1px solid #dc3232;
+`;
+export const RequireFormSendTrue = styled.div`
+  color: #4d8f2a;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 5px;
+  border-top: 1px solid #4d8f2a;
+  border-bottom: 1px solid #4d8f2a;
 `;

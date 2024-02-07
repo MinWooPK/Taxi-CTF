@@ -20,7 +20,7 @@ const Openclose = keyframes`
   }
   50% {
     visibility: visible;
-    width: 320px;
+    width: 100%;
   }`;
 
 export const SliderTaxi = styled.section`

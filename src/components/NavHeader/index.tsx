@@ -110,19 +110,19 @@ const NavHeader = () => {
             ) : (
               <MobileUlDiv>
                 <StieMenuLi>
-                  <StieMenuHref>Get Taxi</StieMenuHref>
+                  <StieMenuHref href="/GetTaxi">Get Taxi</StieMenuHref>
                 </StieMenuLi>
                 <StieMenuLi>
-                  <StieMenuHref>About Us</StieMenuHref>
+                  <StieMenuHref href="/AboutUs">About Us</StieMenuHref>
                 </StieMenuLi>
                 <StieMenuLi>
-                  <StieMenuHref>Services</StieMenuHref>
+                  <StieMenuHref href="/Servicios">Services</StieMenuHref>
                 </StieMenuLi>
                 <StieMenuLi>
-                  <StieMenuHref>Tarifas</StieMenuHref>
+                  <StieMenuHref href="/Tariffs">Tarifas</StieMenuHref>
                 </StieMenuLi>
                 <StieMenuLi>
-                  <StieMenuHref>Contacto</StieMenuHref>
+                  <StieMenuHref href="/Contact">Contacto</StieMenuHref>
                 </StieMenuLi>
               </MobileUlDiv>
             )}

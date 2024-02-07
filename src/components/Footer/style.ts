@@ -63,9 +63,10 @@ export const FooterTaxiContainerLeftLi = styled.li`
   padding: 0.5rem;
 `;
 
-export const FooterTaxiContainerRightLi = styled.li`
+export const FooterTaxiContainerRightLi = styled.a`
   list-style: none;
   display: flex;
+  text-decoration: none;
   justify-content: start;
   align-items: center;
   color: white;

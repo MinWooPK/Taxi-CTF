@@ -63,9 +63,11 @@ export const TariffsCardBottomPrice = styled.p`
   color: #ffffff;
 `;
 
-export const ButtonGet = styled.button`
+export const ButtonGet = styled.a`
   background: #ffc61a;
+  font-weight: 600;
   color: #000000;
+  text-decoration: none;
   border: none;
   padding: 0 40px;
   position: relative;

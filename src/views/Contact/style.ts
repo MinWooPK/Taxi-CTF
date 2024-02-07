@@ -99,6 +99,10 @@ export const SubmitForm = styled.button`
   transition: all 0.3s;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  &:hover {
+    background-color: #737373;
+    color: #ffc61a;
+  }
 `;
 
 export const FormMain = styled.form`
@@ -111,7 +115,7 @@ export const FormMain = styled.form`
     padding: 2rem 5rem 5rem;
   }
   @media (max-width: 425px) {
-    padding: 2rem 2rem 5rem;
+    padding: 2rem 0rem 5rem;
   }
 `;
 
@@ -135,4 +139,13 @@ export const RequireFormSend = styled.div`
   margin-top: 5px;
   border-top: 1px solid #dc3232;
   border-bottom: 1px solid #dc3232;
+`;
+export const RequireFormSendTrue = styled.div`
+  color: #4d8f2a;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 5px;
+  border-top: 1px solid #4d8f2a;
+  border-bottom: 1px solid #4d8f2a;
 `;
