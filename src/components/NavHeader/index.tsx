@@ -51,9 +51,9 @@ const NavHeader = () => {
       <ContainerNavbar>
         <LogoContainer>
           <Logo href="/">
-            <img src={LogoTaxi} alt="Logo" width="90" height="75" />
+            {/* <img src={LogoTaxi} alt="Logo" width="90" height="75" /> */}
             <LogoContainerText>
-              <LogoContainerFirstP>Taxi Santa</LogoContainerFirstP>
+              <LogoContainerFirstP>Taxi Zumaia Santa</LogoContainerFirstP>
               <LogoContainerSecondP>Taxi Service</LogoContainerSecondP>
             </LogoContainerText>
           </Logo>

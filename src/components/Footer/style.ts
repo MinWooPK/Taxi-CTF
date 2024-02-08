@@ -11,6 +11,10 @@ export const FooterTaxi = styled.footer`
   gap: 2rem;
   padding: 3rem;
   text-align: center;
+  @media (max-width: 420px) {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
 `;
 
 export const FooterTaxiContainer = styled.div`

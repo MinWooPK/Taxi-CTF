@@ -9,7 +9,7 @@ export const Navbar = styled.section`
   /* padding: 0.5rem 1rem; */
   left: 0;
   z-index: 5;
-  position: fixed;
+  /* position: fixed; */
   background-color: black;
   width: 100%;
   @media (max-width: 768px) {
@@ -282,7 +282,7 @@ export const LogoContainerFirstP = styled.div`
   font-size: 40px;
   font-weight: 700;
   color: #ffc61a;
-  @media (max-width: 420px) {
+  @media (max-width: 1100px) {
     font-size: 24px;
   }
 `;
