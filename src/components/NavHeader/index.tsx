@@ -30,9 +30,7 @@ const NavHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [navVisible, setNavVisible] = useState<boolean>(true);
   const [isDesktop, setIsDestkop] = useState(window.innerWidth > 768);
-  console.log("NavHeader is rendering");
 
-  console.log("visiblenav:", navVisible);
   useEffect(() => {
     const handleResize = () => {
       setIsDestkop(window.innerWidth > 768);
