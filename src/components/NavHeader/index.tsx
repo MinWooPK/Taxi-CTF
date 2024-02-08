@@ -29,11 +29,11 @@ import EmailBlack from "../../assets/svg/emailBlack";
 const NavHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [navVisible, setNavVisible] = useState<boolean>(true);
-  const [isDesktop, setIsDestkop] = useState(window.innerWidth > 768);
+  const [isDesktop, setIsDestkop] = useState(window.innerWidth > 1020);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDestkop(window.innerWidth > 768);
+      setIsDestkop(window.innerWidth > 1020);
     };
 
     window.addEventListener("resize", handleResize);
