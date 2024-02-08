@@ -75,7 +75,9 @@ export const ButtonGet = styled.a`
   font-size: 16px;
   height: 70px;
   line-height: 70px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const TariffsCardImg = styled.div`

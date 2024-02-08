@@ -52,6 +52,9 @@ export const FormMain = styled.form`
   gap: 1rem;
   width: 100%;
   padding: 2rem 9rem 5rem;
+  @media (max-width: 1025px) {
+    padding: 2rem 3rem 5rem;
+  }
   @media (max-width: 768px) {
     padding: 2rem 5rem 5rem;
   }

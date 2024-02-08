@@ -64,14 +64,14 @@ function Footer() {
               email@email.com
             </FooterTaxiP>
           </FooterTaxiContainerLeftSecond>
-          <FooterTaxiContainerLeftThird>
+          {/* <FooterTaxiContainerLeftThird>
             <FooterTaxiContainerLeftLi>
               <Facebook />
             </FooterTaxiContainerLeftLi>
             <FooterTaxiContainerLeftLi>
               <Instagram />
             </FooterTaxiContainerLeftLi>
-          </FooterTaxiContainerLeftThird>
+          </FooterTaxiContainerLeftThird> */}
         </FooterTaxiContainerLeft>
         <FooterTaxiContainerRight>
           <FooterTaxiContainerRightTitle>

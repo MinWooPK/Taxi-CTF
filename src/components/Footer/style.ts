@@ -72,6 +72,7 @@ export const FooterTaxiContainerRightLi = styled.a`
   color: white;
   font-size: 16px;
   font-weight: 400;
+  text-align: start;
   &:before {
     content: "";
     width: 11px;

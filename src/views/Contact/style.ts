@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import Donostia from "../../assets/img/Donostia.jpg";
 
 export const FirstContainer = styled.section`
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   display: flex;
   background-image: url(${Donostia});
@@ -36,6 +36,9 @@ export const SubTitle = styled.div`
 export const ContactContainer = styled.section`
   background-color: white;
   padding: 2rem;
+  @media (max-width: 430px) {
+    padding: 1rem;
+  }
 `;
 export const CardContainer = styled.section`
   display: flex;

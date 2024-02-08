@@ -32,7 +32,7 @@ const FormPhone = () => {
     validationSchema: validationSchema,
     onSubmit: (values) => {
       // Envía el formulario por Formspree
-      fetch("https://formspree.io/f/meqyanoy", {
+      fetch("https://formspree.io/f/xwkglyjk", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

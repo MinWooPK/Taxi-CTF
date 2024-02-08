@@ -13,9 +13,6 @@ import {
   ButtonContainer,
 } from "./style";
 
-import MercedezMain from "../../assets/img/Mercedez.png";
-import CochePrueba from "../../assets/img/CochePrueba.png";
-import FormPhone from "../../components/FormPhone";
 import OurServices from "../../components/OurServices";
 import Tariffs from "../../components/Tariffs";
 import PhoneIcon from "../../assets/svg/Phone";
@@ -50,7 +47,7 @@ const Home = () => {
 
   const handleEmail = () => {
     // Puedes utilizar un enlace con el prefijo "mailto:" para abrir la aplicación de correo
-    window.location.href = "mailto:correo@example.com";
+    window.location.href = "juancarlos.blazquezv@gmail.com";
   };
 
   return (
@@ -80,14 +77,6 @@ const Home = () => {
           </ButtonEmail>
         </ButtonContainer>
       </SliderTaxi>
-      {/* <ElectionService>
-        <MainImgDiv>
-          <MainImgElectionService src={MercedezMain} />
-        </MainImgDiv>
-        <FormHome>
-          <FormPhone></FormPhone>
-        </FormHome>
-      </ElectionService> */}
       <ElectionService />
       <Information />
       <OurServices />

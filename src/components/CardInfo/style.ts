@@ -12,7 +12,8 @@ export const CardInfoBox = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
 `;
 
 export const IconCircle = styled.div`

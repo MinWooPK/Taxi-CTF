@@ -7,32 +7,32 @@ import {
   IconDescription,
   Logo,
   LogoContainer,
-  LogoImg,
   MobileUlDiv,
   NavBlack,
   NavRed,
   Navbar,
-  NavbarButton,
   SideBarTitle,
   SiteMenu,
   StieMenuHref,
   StieMenuLi,
+  LogoContainerText,
+  LogoContainerFirstP,
+  LogoContainerSecondP,
 } from "./styled";
 
-import LogoImgNav from "../../assets/img/logo-taxin1.png";
 import LogoTaxi from "../../assets/img/loader-taxin.png";
-import Phone from "../../assets/svg/Phone";
 import { useEffect, useState } from "react";
 import Call from "../../assets/svg/call";
-import Email from "../../assets/svg/email";
 import Map from "../../assets/svg/map";
 import EmailBlack from "../../assets/svg/emailBlack";
 
 const NavHeader = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [navVisible, setNavVisible] = useState(true);
+  const [navVisible, setNavVisible] = useState<boolean>(true);
   const [isDesktop, setIsDestkop] = useState(window.innerWidth > 768);
+  console.log("NavHeader is rendering");
 
+  console.log("visiblenav:", navVisible);
   useEffect(() => {
     const handleResize = () => {
       setIsDestkop(window.innerWidth > 768);
@@ -52,8 +52,12 @@ const NavHeader = () => {
     <Navbar>
       <ContainerNavbar>
         <LogoContainer>
-          <Logo href="#">
-            <LogoImg src={LogoImgNav} alt="Logo" />
+          <Logo href="/">
+            <img src={LogoTaxi} alt="Logo" width="90" height="75" />
+            <LogoContainerText>
+              <LogoContainerFirstP>Taxi Santa</LogoContainerFirstP>
+              <LogoContainerSecondP>Taxi Service</LogoContainerSecondP>
+            </LogoContainerText>
           </Logo>
         </LogoContainer>
         <SiteMenu>
@@ -84,9 +88,9 @@ const NavHeader = () => {
           <Bar />
           <Bar />
         </HamburgerMenu>
-        <NavBlack className="nav-black" visible={navVisible}>
-          <NavRed className="nav-red" visible={navVisible}>
-            <Logo href="#">
+        <NavBlack className="nav-black" visiblenav={navVisible}>
+          <NavRed className="nav-red" visiblenav={navVisible}>
+            <Logo href="/">
               <img src={LogoTaxi} alt="Logo" width="179" height="159" />
             </Logo>
             {isDesktop ? (
@@ -95,20 +99,23 @@ const NavHeader = () => {
                 <IconCircle>
                   <Call />
                 </IconCircle>
-                <IconDescription>+34 603 18 44 31</IconDescription>
+                <IconDescription>+34 633 55 63 79</IconDescription>
                 <IconCircle>
                   <EmailBlack />
                 </IconCircle>
-                <IconDescription>taxi@example.com</IconDescription>
+                <IconDescription>
+                  juancarlos.blazquezv@gmail.com
+                </IconDescription>
                 <IconCircle>
                   <Map />
                 </IconCircle>
-                <IconDescription>
-                  Calle Jose Ricardo -Pais Vasco
-                </IconDescription>
+                <IconDescription>Bilbao - Pais Vasco</IconDescription>
               </>
             ) : (
               <MobileUlDiv>
+                <StieMenuLi>
+                  <StieMenuHref href="/">Home</StieMenuHref>
+                </StieMenuLi>
                 <StieMenuLi>
                   <StieMenuHref href="/GetTaxi">Get Taxi</StieMenuHref>
                 </StieMenuLi>

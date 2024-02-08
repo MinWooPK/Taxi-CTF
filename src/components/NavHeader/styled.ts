@@ -40,12 +40,15 @@ export const LogoImg = styled.img`
   }
 `;
 export const Logo = styled.a`
-  display: inline-block;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  cursor: pointer;
 `;
 
 export const SiteMenu = styled.div`
   text-align: center;
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
     display: none;
   }
 `;
@@ -196,21 +199,22 @@ export const NavbarButton = styled.div`
     display: none;
   }
 `;
-export const NavBlack = styled.div<{ visible?: boolean }>`
+
+export const NavBlack = styled.div<{ visiblenav: boolean }>`
   background-color: #ffc61a;
   width: 60%;
   max-width: 480px;
   min-width: 260px;
   position: fixed;
   top: 0;
-  left: 0; // Cambiado a 0
+  left: 0;
   z-index: 1000;
   height: 100vh;
-  transform: translateX(${(props) => (props.visible ? "-100%" : "0%")});
+  transform: translateX(${(props) => (props.visiblenav ? "-100%" : "0")});
   transition: transform 0.3s ease-in-out;
 `;
 
-export const NavRed = styled.div<{ visible?: boolean }>`
+export const NavRed = styled.div<{ visiblenav: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,13 +225,12 @@ export const NavRed = styled.div<{ visible?: boolean }>`
   transition-delay: 0.2s;
   position: fixed;
   top: 0;
-  left: 0; // Cambiado a 0
+  left: 0;
   z-index: 1000;
   height: 100vh;
-  transform: translateX(${(props) => (props.visible ? "-100%" : "0%")});
+  transform: translateX(${(props) => (props.visiblenav ? "-100%" : "0")});
   transition: transform 1.3s ease-in-out;
 `;
-
 export const SideBarTitle = styled.h2`
   font-size: 26px;
   font-weight: 700;
@@ -267,4 +270,27 @@ export const MobileUlDiv = styled.div`
   align-items: flex-start;
   width: 100%;
   margin: auto;
+`;
+
+export const LogoContainerText = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: start;
+`;
+export const LogoContainerFirstP = styled.div`
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffc61a;
+  @media (max-width: 420px) {
+    font-size: 24px;
+  }
+`;
+export const LogoContainerSecondP = styled.div`
+  font-size: 20px;
+  margin-top: -18px;
+  @media (max-width: 420px) {
+    margin-top: 0;
+    font-size: 14px;
+  }
 `;

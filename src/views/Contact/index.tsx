@@ -46,7 +46,7 @@ const ContactPage = () => {
     validationSchema: validationSchema,
     onSubmit: async (values) => {
       try {
-        const response = await fetch("https://formspree.io/f/meqyanoy", {
+        const response = await fetch("https://formspree.io/f/xwkglyjk", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -73,18 +73,18 @@ const ContactPage = () => {
       <ContactContainer>
         <CardContainer>
           <CardInfo
-            subTitleCard={"tu_correo@example.com"}
+            subTitleCard={"juancarlos.blazquezv@gmail.com"}
             titleCard={"Email"}
             imgCard={<EmailBlack />}
           />
 
           <CardInfo
-            subTitleCard={"Tu dirección"}
+            subTitleCard={"Bilbao - Pais Vasco"}
             titleCard={"Dirección"}
             imgCard={<Map />}
           />
           <CardInfo
-            subTitleCard={"+34 633556379"}
+            subTitleCard={"+34 633 55 63 79"}
             titleCard={"Teléfono"}
             imgCard={<Call />}
           />

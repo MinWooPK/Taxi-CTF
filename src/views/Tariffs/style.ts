@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import River from "../../assets/img/River.jpg";
 export const FirstContainer = styled.section`
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   display: flex;
   background-image: url(${River});
