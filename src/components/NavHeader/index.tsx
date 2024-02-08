@@ -107,7 +107,7 @@ const NavHeader = () => {
                 <IconCircle>
                   <Map />
                 </IconCircle>
-                <IconDescription>Bilbao - Pais Vasco</IconDescription>
+                <IconDescription>Gipuzkoa - Euskadi</IconDescription>
               </>
             ) : (
               <MobileUlDiv>

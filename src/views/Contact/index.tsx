@@ -79,7 +79,7 @@ const ContactPage = () => {
           />
 
           <CardInfo
-            subTitleCard={"Bilbao - Pais Vasco"}
+            subTitleCard={"Gipuzkoa - Euskadi"}
             titleCard={"Dirección"}
             imgCard={<Map />}
           />

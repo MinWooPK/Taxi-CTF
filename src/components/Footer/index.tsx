@@ -46,13 +46,13 @@ function Footer() {
         <FooterTaxiContainerLeft>
           <FooterTaxiContainerLeftFrist>
             <FooterTaxiImg src={Logo} alt="" />
-          </FooterTaxiContainerLeftFrist>{" "}
+          </FooterTaxiContainerLeftFrist>
           <FooterTaxiContainerLeftSecond>
             <FooterTaxiP>
               <FooterTaxiIconA />
               <WorldTaxi />
-              Bilbao. Pais Vasco
-            </FooterTaxiP>{" "}
+              Gipuzkoa - Euskadi
+            </FooterTaxiP>
             <FooterTaxiP>
               <FooterTaxiIconA />
               <Phone />
@@ -61,7 +61,7 @@ function Footer() {
             <FooterTaxiP>
               <FooterTaxiIconA />
               <Email />
-              email@email.com
+              juancarlos.blazquezv@gmail.com
             </FooterTaxiP>
           </FooterTaxiContainerLeftSecond>
           {/* <FooterTaxiContainerLeftThird>
