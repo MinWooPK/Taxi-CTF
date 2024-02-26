@@ -14,6 +14,7 @@ export const CardInfoBox = styled.div`
   gap: 1rem;
   max-width: 320px;
   width: 100%;
+  /* Color */
 `;
 
 export const IconCircle = styled.div`
