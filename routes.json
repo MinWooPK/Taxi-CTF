@@ -1,8 +1,38 @@
 {
   "routes": [
     {
-      "route": "/*",
+      "route": "/",
       "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/Tariffs",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/Servicios",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/GetTaxi",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/Contact",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/AboutUs",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/static/*",
+      "redirect": "/index.html",
       "statusCode": 200
     }
   ]
