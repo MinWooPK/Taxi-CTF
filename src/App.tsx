@@ -16,7 +16,7 @@ export default function App() {
       <NavHeader />
       <BrowserRouter>
         <Routes>
-          <Route element={<Layout />}>
+          <Route path="/" element={<Layout />}>
             <Route path="/" index element={<Home />} />
             <Route path="/Tariffs" element={<TariffsPage />} />
             <Route path="/Servicios" element={<ServicesPage />} />
