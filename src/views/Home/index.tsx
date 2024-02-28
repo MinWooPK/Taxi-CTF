@@ -47,7 +47,7 @@ const Home = () => {
 
   const handleEmail = () => {
     // Puedes utilizar un enlace con el prefijo "mailto:" para abrir la aplicación de correo
-    window.location.href = "juancarlos.blazquezv@gmail.com";
+    window.location.href = "mailto:juancarlos.blazquezv@gmail.com";
   };
 
   return (
