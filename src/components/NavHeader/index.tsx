@@ -132,7 +132,7 @@ const NavHeader = () => {
               </MobileUlDiv>
             )}
             <CopyRightDescription>
-              © 2023 Taxin - All Rights Reserved.
+              © 2024 Taxin - All Rights Reserved.
             </CopyRightDescription>
           </NavRed>
         </NavBlack>

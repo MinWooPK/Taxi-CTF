@@ -35,7 +35,7 @@ const links = [
 ];
 
 const footerDescriptions = [
-  "© 2023 Todos los derechos reservados",
+  "© 2024 Todos los derechos reservados",
   "Diseño y desarrollo CTF - Codetofit",
 ];
 
