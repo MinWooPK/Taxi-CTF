@@ -54,7 +54,7 @@ const NavHeader = () => {
             {/* <img src={LogoTaxi} alt="Logo" width="90" height="75" /> */}
             <LogoContainerText>
               <LogoContainerFirstP>Taxi Zumaia Santa</LogoContainerFirstP>
-              <LogoContainerSecondP>Taxi Service</LogoContainerSecondP>
+              <LogoContainerSecondP> Servicios de Taxi</LogoContainerSecondP>
             </LogoContainerText>
           </Logo>
         </LogoContainer>

@@ -33,7 +33,26 @@ export const FooterTaxiContainerLeft = styled.div`
   flex-direction: column;
   gap: 2rem;
 `;
-export const FooterTaxiContainerLeftFrist = styled.div``;
+export const FooterTaxiContainerLeftFrist = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const FooterTaxiContainerLeftFristSub = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+`;
+export const FooterTaxiContainerLogoH2 = styled.h1`
+  color: #ffc61a;
+  font-size: 48px;
+  letter-spacing: 3px;
+  height: 53px;
+`;
+export const FooterTaxiContainerLogoP = styled.p`
+  color: ${({ theme }) => theme.colors.principal.pure};
+  margin-left: 10px;
+`;
+
 export const FooterTaxiImg = styled.img`
   max-width: 205px;
 `;
@@ -98,6 +117,7 @@ export const FooterTaxiContainerRight = styled.div`
   padding-top: 3rem;
 `;
 export const FooterTaxiContainerRightTitle = styled.div`
+  text-align: left;
   color: #ffc61a;
   font-size: 26px;
   margin-top: 10px;

@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import LogoTaxi from "../../assets/img/loader-taxin.png";
+
 import {
   FooterTaxi,
   FooterCopyRightDetailDescription,
@@ -17,6 +19,9 @@ import {
   FooterTaxiContainerLeftLi,
   FooterTaxiContainerRightTitle,
   FooterTaxiContainerRightLi,
+  FooterTaxiContainerLogoH2,
+  FooterTaxiContainerLogoP,
+  FooterTaxiContainerLeftFristSub,
 } from "./style";
 
 import Logo from "../../assets/img/logo-taxin1.png";
@@ -45,7 +50,13 @@ function Footer() {
       <FooterTaxiContainer>
         <FooterTaxiContainerLeft>
           <FooterTaxiContainerLeftFrist>
-            <FooterTaxiImg src={Logo} alt="" />
+            <img src={LogoTaxi} alt="Logo" width="85" height="75" />
+            <FooterTaxiContainerLeftFristSub>
+              <FooterTaxiContainerLogoH2>Taxi</FooterTaxiContainerLogoH2>
+              <FooterTaxiContainerLogoP>
+                Servicios de Taxi
+              </FooterTaxiContainerLogoP>
+            </FooterTaxiContainerLeftFristSub>
           </FooterTaxiContainerLeftFrist>
           <FooterTaxiContainerLeftSecond>
             <FooterTaxiP>

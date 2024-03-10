@@ -289,8 +289,11 @@ export const LogoContainerFirstP = styled.div`
 export const LogoContainerSecondP = styled.div`
   font-size: 20px;
   margin-top: -18px;
+  margin-left: 7px;
+
   @media (max-width: 420px) {
     margin-top: 0;
     font-size: 14px;
+    margin-left: 4px;
   }
 `;
