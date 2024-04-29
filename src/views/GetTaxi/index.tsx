@@ -7,7 +7,7 @@ const GetTaxiPage = () => {
   return (
     <>
       <FirstContainer>
-        <TitleContainer subTitleText={"Get Taxi"} titleText={"Get Taxi"} />
+        <TitleContainer subTitleText={"Pedir Taxi"} titleText={"Pedir Taxi"} />
       </FirstContainer>
       <ElectionService></ElectionService>
       <Tariffs></Tariffs>

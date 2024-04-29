@@ -10,7 +10,10 @@ const AboutUsPage = () => {
   return (
     <>
       <FirstContainer>
-        <TitleContainer subTitleText={"About Us"} titleText={"About Us"} />
+        <TitleContainer
+          subTitleText={"Información"}
+          titleText={"Información"}
+        />
       </FirstContainer>
       <Information />
       <CardContainer>
@@ -35,13 +38,13 @@ const AboutUsPage = () => {
           }
           imgCard={<GoodHand />}
         />
-        <CardAnimation
+        {/* <CardAnimation
           titleText={"Soporte"}
           subTitleText={
             "Aceleramos sus procesos empresariales proporcionándole asistencia profesional. Resolvemos sus problemas y proporcionamos soluciones al instante."
           }
           imgCard={<Support />}
-        />
+        /> */}
       </CardContainer>
     </>
   );

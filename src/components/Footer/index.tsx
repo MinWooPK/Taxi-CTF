@@ -35,7 +35,7 @@ const links = [
   { text: "Servicios", url: "/service" },
   { text: "Portfolio", url: "/portfolio" },
   { text: "Contact Us", url: "/FormularioPresupuesto" },
-  { text: "About Us", url: "/carreras" },
+  { text: "Sobre Nosotros", url: "/carreras" },
   { text: "Politica de cookies", url: "/PoliticaDeCookies" },
 ];
 
@@ -114,16 +114,16 @@ function Footer() {
           <FooterTaxiContainerRightTitle>
             Seccion
             <FooterTaxiContainerRightLi href="/">
-              Home
+              Inicio
             </FooterTaxiContainerRightLi>
             <FooterTaxiContainerRightLi href="/GetTaxi">
-              Get Taxi
+              Pedir Taxi
             </FooterTaxiContainerRightLi>
             <FooterTaxiContainerRightLi href="/AboutUs">
-              Sobre Nosotros
+              Información
             </FooterTaxiContainerRightLi>
             <FooterTaxiContainerRightLi href="/Servicios">
-              Services
+              Servicios
             </FooterTaxiContainerRightLi>
             <FooterTaxiContainerRightLi href="/Tariffs">
               Tarifas

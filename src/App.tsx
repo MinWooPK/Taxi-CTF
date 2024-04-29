@@ -22,7 +22,7 @@ export default function App() {
             <Route path="/Servicios" element={<ServicesPage />} />
             <Route path="/GetTaxi" element={<GetTaxiPage />} />
             <Route path="/Contact" element={<ContactPage />} />
-            <Route path="/AboutUs" element={<AboutUsPage />} />
+            <Route path="/Info" element={<AboutUsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

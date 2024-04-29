@@ -8,7 +8,7 @@ const TitleContainer = ({ subTitleText, titleText }: TitleContainerProps) => {
     <TitleSection>
       <MainTitle>{titleText}</MainTitle>
       <SubTitle>
-        Home {">"} {subTitleText}
+        Inicio {">"} {subTitleText}
       </SubTitle>
     </TitleSection>
   );

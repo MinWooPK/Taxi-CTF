@@ -60,16 +60,16 @@ const NavHeader = () => {
         </LogoContainer>
         <SiteMenu>
           <StieMenuLi>
-            <StieMenuHref href="/">Home</StieMenuHref>
+            <StieMenuHref href="/">Inicio</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref href="/GetTaxi">Get Taxi</StieMenuHref>
+            <StieMenuHref href="/GetTaxi">Pedir Taxi</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref href="/AboutUs">About Us</StieMenuHref>
+            <StieMenuHref href="/Info">Información</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
-            <StieMenuHref href="/Servicios">Services</StieMenuHref>
+            <StieMenuHref href="/Servicios">Servicios</StieMenuHref>
           </StieMenuLi>
           <StieMenuLi>
             <StieMenuHref href="/Tariffs">Tarifas</StieMenuHref>
@@ -112,16 +112,16 @@ const NavHeader = () => {
             ) : (
               <MobileUlDiv>
                 <StieMenuLi>
-                  <StieMenuHref href="/">Home</StieMenuHref>
+                  <StieMenuHref href="/">Inicio</StieMenuHref>
                 </StieMenuLi>
                 <StieMenuLi>
-                  <StieMenuHref href="/GetTaxi">Get Taxi</StieMenuHref>
+                  <StieMenuHref href="/GetTaxi">Pedir Taxi</StieMenuHref>
                 </StieMenuLi>
                 <StieMenuLi>
-                  <StieMenuHref href="/AboutUs">About Us</StieMenuHref>
+                  <StieMenuHref href="/Info">Información</StieMenuHref>
                 </StieMenuLi>
                 <StieMenuLi>
-                  <StieMenuHref href="/Servicios">Services</StieMenuHref>
+                  <StieMenuHref href="/Servicios">Servicos</StieMenuHref>
                 </StieMenuLi>
                 <StieMenuLi>
                   <StieMenuHref href="/Tariffs">Tarifas</StieMenuHref>
