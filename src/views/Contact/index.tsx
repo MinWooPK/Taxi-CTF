@@ -84,7 +84,7 @@ const ContactPage = () => {
             imgCard={<Map />}
           />
           <CardInfo
-            subTitleCard={"+34 633 55 63 79"}
+            subTitleCard={"+34 623 56 56 14"}
             titleCard={"Teléfono"}
             imgCard={<Call />}
           />

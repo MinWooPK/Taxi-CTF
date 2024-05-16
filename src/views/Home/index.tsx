@@ -37,12 +37,12 @@ const Home = () => {
   const texts = ["Donde", "Cuándo", "Quién"];
 
   const handleCall = () => {
-    window.location.href = "tel:+34633556379";
+    window.location.href = "tel:+34623565614";
   };
 
   const handleWhatsapp = () => {
     // Puedes utilizar un enlace con el prefijo "https://wa.me/" para abrir WhatsApp
-    window.open("https://wa.me/+34633556379", "_blank");
+    window.open("https://wa.me/+34623565614", "_blank");
   };
 
   const handleEmail = () => {
@@ -66,7 +66,7 @@ const Home = () => {
         </SliderTaxiTitle>
         <ButtonContainer>
           <ButtonCall onClick={handleCall}>
-            <PhoneIcon /> +34 633 556 379
+            <PhoneIcon /> +34 623 565 614
           </ButtonCall>
           <ButtonWhatssap onClick={handleWhatsapp}>
             <WhatsAppIcon></WhatsAppIcon> WhatsApp

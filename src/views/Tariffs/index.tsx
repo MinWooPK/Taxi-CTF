@@ -19,7 +19,7 @@ const TariffsPage = () => {
         </SliderTaxiTitle>
         <ButtonContainer>
           <ButtonCall onClick={handleCall}>
-            <PhoneIcon /> +34 633 556 379
+            <PhoneIcon /> +34 623 565 614
           </ButtonCall>
           <ButtonWhatssap onClick={handleWhatsapp}>
             <WhatsAppIcon></WhatsAppIcon> WhatsApp

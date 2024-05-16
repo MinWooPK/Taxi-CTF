@@ -97,7 +97,7 @@ const NavHeader = () => {
                 <IconCircle>
                   <Call />
                 </IconCircle>
-                <IconDescription>+34 633 55 63 79</IconDescription>
+                <IconDescription>+34 623 56 56 14</IconDescription>
                 <IconCircle>
                   <EmailBlack />
                 </IconCircle>

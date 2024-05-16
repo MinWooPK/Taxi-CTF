@@ -67,7 +67,7 @@ function Footer() {
             <FooterTaxiP>
               <FooterTaxiIconA />
               <Phone />
-              +34 633 556 379
+              +34 623 56 56 14
             </FooterTaxiP>
             <FooterTaxiP>
               <FooterTaxiIconA />
