@@ -20,21 +20,21 @@ const AboutUsPage = () => {
         <CardAnimation
           titleText={"Fiabilidad"}
           subTitleText={
-            "Proporcionamos servicios precisos, fiables y éticos con nuestro personal experto. Aplicamos los métodos más rápidos y fiables para su marca."
+            "Tu elección de confianza para cada viaje. Nuestros conductores expertos y tecnología de vanguardia garantizan llegadas puntuales sin excepción."
           }
           imgCard={<TravelAbout />}
         />
         <CardAnimation
           titleText={"Loyalty"}
           subTitleText={
-            "Nuestro trabajo a largo plazo continúa hasta que el trabajo está terminado. Establecemos relaciones sólidas y duraderas con todas las empresas con las que trabajamos."
+            "Tu satisfacción es nuestra prioridad. Apreciamos tu elección y trabajamos incansablemente para ofrecerte la mejor experiencia en cada trayecto."
           }
           imgCard={<Award />}
         />
         <CardAnimation
           titleText={"Experiencia"}
           subTitleText={
-            "Gracias a la experiencia adquirida a lo largo de los años, el especialista presta servicio con dispositivos de última tecnología."
+            "Nuestros años de experiencia en la carretera aseguran un viaje cómodo, seguro y sin contratiempos."
           }
           imgCard={<GoodHand />}
         />
