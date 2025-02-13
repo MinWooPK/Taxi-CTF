@@ -10,9 +10,9 @@ import {
   Dot,
   DotsContainer,
   FirstContainer,
-  NumberText,
   Slide,
   SlideshowContainer,
+  TitleSlide,
 } from "./style";
 import Award from "../../assets/svg/Award";
 import GoodHand from "../../assets/svg/GoodHand";
@@ -65,12 +65,13 @@ const AboutUsPage = () => {
       </FirstContainer>
       <Information />
       <SlideshowContainer>
+        <TitleSlide>Viaja con comodidad con nuestro taxi</TitleSlide>
         {slides.map((slide, index) => (
           <Slide key={index} active={index === currentIndex}>
             {/* <NumberText>{`${index + 1} / ${slides.length}`}</NumberText> */}
             <img
               src={slide.src}
-              style={{ width: "100%" }}
+              style={{ width: "100%", maxHeight: "332px" }}
               alt={`Slide ${index + 1}`}
             />
             <Caption>{slide.caption}</Caption>

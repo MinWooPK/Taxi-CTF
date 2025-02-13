@@ -41,7 +41,7 @@ export const fade = keyframes`
 
 export const SlideshowContainer = styled.div`
   max-width: 500px;
-  max-height: 332px;
+  /* max-height: 332px; */
   position: relative;
   margin: auto;
 `;
@@ -50,6 +50,17 @@ export const Slide = styled.div<SlideProps>`
   display: ${({ active }) => (active ? "block" : "none")};
   animation: ${fade} 1.5s;
   position: relative;
+  /* max-height: 332px; */
+`;
+
+export const TitleSlide = styled.div`
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffc61a;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+  text-align: center;
 `;
 
 export const NumberText = styled.div`
